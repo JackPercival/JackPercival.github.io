@@ -6,7 +6,7 @@ import Skill from "../elements/Skill";
 
 const aboutContent = {
   name: "Bolby",
-  avatarImage: "/images/avatar-2.svg",
+  avatarImage: "/images/me2.png",
   content:
     "I am Bolby Doe, web developer from London, United Kingdom. I have rich experience in web site design and building and customization, also I am good at WordPress.",
 };
