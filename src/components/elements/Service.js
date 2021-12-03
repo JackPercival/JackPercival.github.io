@@ -16,20 +16,16 @@ function Service({ service }) {
 
   return (
     <div
-      className={
-        contentColor === "light"
-          ? "service-box rounded data-background padding-30 text-center text-light shadow-blue"
-          : "service-box rounded data-background padding-30 text-center shadow-blue"
-      }
+      className="service-box rounded data-background text-center"
       data-color="#6C6CE5"
       style={{
-        background: color,
-        boxShadow: `0px 5px 20px 0px rgba(${hexToRgb(color)}, 0.5)`,
+        // background: color,
+        // boxShadow: `0px 5px 20px 0px rgba(${hexToRgb(color)}, 0.5)`,
       }}
     >
-      <img src={icon} alt={title} />
+      <img src={icon} alt={title} className="rounded" />
       <h3 className="mb-3 mt-0">{title}</h3>
-      <p className="mb-0">{content}</p>
+      {/* <p className="mb-0">{content}</p> */}
     </div>
   );
 }

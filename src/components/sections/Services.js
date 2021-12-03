@@ -4,14 +4,34 @@ import Pagetitle from "../elements/Pagetitle";
 import Service from "../elements/Service";
 
 const servicesData = [
+  {id: 1,
+    icon: "images/js_icon.png",
+    title: "JavaScript"
+  },
   {
     id: 1,
-    icon: "images/service-1.svg",
-    title: "UI/UX design",
-    content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-    color: "#6C6CE5",
-    contentColor: "light",
+    icon: "images/python_icon.png",
+    title: "Python"
+  },{
+    id: 1,
+    icon: "images/react_icon.png",
+    title: "React"
+  },
+  {
+    id: 3,
+    icon: "images/redux_icon.png",
+    title: "Redux"
+  },
+
+  {
+    id: 2,
+    icon: "images/html2_icon.png",
+    title: "HTML"
+  },
+  {
+    id: 3,
+    icon: "images/css_icon.jpeg",
+    title: "CSS"
   },
   {
     id: 2,
@@ -37,7 +57,7 @@ function Services() {
   return (
     <section id="services">
       <div className="container">
-        <Pagetitle title="Services" />
+        <Pagetitle title="Skills" />
         <div className="row fix-spacing">
           {servicesData.map((service) => (
             <div className="col-md-4" key={service.id}>
@@ -47,7 +67,7 @@ function Services() {
         </div>
         <div className="mt-5 text-center">
           <p className="mb-0">
-            Looking for a custom job?{" "}
+            Want to connect?{" "}
             <Link
               className="colorpink pointer"
               to="section-contact"

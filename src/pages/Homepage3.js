@@ -36,18 +36,18 @@ function Homepage3() {
         <Element name="section-works">
           <Works />
         </Element>
-        <Element name="section-pricing">
+        {/* <Element name="section-pricing">
           <Pricing />
         </Element>
         <Element name="section-testimoninal">
           <Testimonials />
-        </Element>
-        <Element name="section-brandlogos">
+        </Element> */}
+        {/* <Element name="section-brandlogos">
           <Brandlogos />
-        </Element>
-        <Element name="section-blogs">
+        </Element> */}
+        {/* <Element name="section-blogs">
           <Blogs />
-        </Element>
+        </Element> */}
         <Element name="section-contact">
           <Contact />
         </Element>
