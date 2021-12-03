@@ -4,52 +4,72 @@ import Pagetitle from "../elements/Pagetitle";
 import Service from "../elements/Service";
 
 const servicesData = [
-  {id: 1,
+  {
+    id: 1,
+    icon: "images/react_icon.png",
+    title: "React",
+    padding: true
+  },
+  {
+    id: 2,
+    icon: "images/redux_icon.png",
+    title: "Redux",
+    padding: true
+  },
+  {id: 3,
     icon: "images/js_icon.png",
     title: "JavaScript"
   },
   {
-    id: 1,
+    id: 4,
     icon: "images/python_icon.png",
-    title: "Python"
-  },{
-    id: 1,
-    icon: "images/react_icon.png",
-    title: "React"
+    title: "Python",
+    padding: true
   },
   {
-    id: 3,
-    icon: "images/redux_icon.png",
-    title: "Redux"
+    id: 5,
+    icon: "images/flask_icon.png",
+    title: "Flask",
+    padding: true
   },
-
   {
-    id: 2,
+    id: 6,
+    icon: "images/express_icon.png",
+    title: "Express",
+  },
+  {
+    id: 6,
     icon: "images/html2_icon.png",
     title: "HTML"
   },
   {
-    id: 3,
+    id: 7,
     icon: "images/css_icon.jpeg",
     title: "CSS"
   },
   {
-    id: 2,
-    icon: "images/service-2.svg",
-    title: "Web Development",
-    content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-    color: "#F9D74C",
-    contentColor: "dark",
+    id: 8,
+    icon: "images/sql_icon.png",
+    title: "SQL",
+    padding: true
   },
   {
-    id: 3,
-    icon: "images/service-3.svg",
-    title: "Photography",
-    content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-    color: "#F97B8B",
-    contentColor: "light",
+    id: 8,
+    icon: "images/sequelize_icon.png",
+    title: "Sequelize",
+    padding: true
+  },
+  {
+    id: 8,
+    icon: "images/sqlalchemy_icon.png",
+    title: "SQLAlchemy",
+    padding: true
+  },
+  {
+    id: 9,
+    icon: "images/postgresql_icon.png",
+    title: "PostgreSQL",
+    padding: true
   },
 ];
 
