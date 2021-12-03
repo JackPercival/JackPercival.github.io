@@ -8,27 +8,33 @@ const aboutContent = {
   name: "Bolby",
   avatarImage: "/images/me2.png",
   content:
-    "I am Bolby Doe, web developer from London, United Kingdom. I have rich experience in web site design and building and customization, also I am good at WordPress.",
+    "I am Jack Percival, a software engineer from Newport Beach, California. I have experience building full stack applications, advising on UI/UX decisions, managing large scale software development projects, and testing countless features. I love to code with React, Redux, JavaScript, and Python, and am always eager to learn new programming languages.",
 };
 
 const progressData = [
   {
     id: 1,
-    title: "Development",
-    percantage: 85,
+    title: "Front End Development",
+    percantage: 95,
     progressColor: "#FFD15C",
   },
   {
     id: 2,
-    title: "UI/UX Design",
-    percantage: 95,
+    title: "Back End Development",
+    percantage: 90,
     progressColor: "#FF4C60",
   },
   {
     id: 3,
-    title: "Photography",
-    percantage: 70,
+    title: "UI/UX",
+    percantage: 85,
     progressColor: "#6C6CE5",
+  },
+  {
+    id: 4,
+    title: "Bug Finding",
+    percantage: 90,
+    progressColor: "#329932",
   },
 ];
 
@@ -36,26 +42,26 @@ const counterData = [
   {
     id: 1,
     title: "Projects completed",
-    count: 198,
+    count: 30,
     icon: "icon-fire",
   },
   {
     id: 2,
-    title: "Cup of coffee",
-    count: 5670,
-    icon: "icon-cup",
+    title: "Lines of code",
+    count: 25170,
+    icon: "icon-screen-desktop",
   },
   {
     id: 3,
-    title: "Satisfied clients",
-    count: 427,
+    title: "People managed",
+    count: 125,
     icon: "icon-people",
   },
   {
     id: 4,
-    title: "Nominees winner",
-    count: 35,
-    icon: "icon-badge",
+    title: "Dog Walks",
+    count: 947,
+    icon: "icon-heart",
   },
 ];
 
@@ -78,8 +84,8 @@ function About() {
                 <div className="col-md-6">
                   <p>{aboutContent.content}</p>
                   <div className="mt-3">
-                    <a href="!#" className="btn btn-default">
-                      Download CV
+                    <a href="/Jack_Percival_Resume.pdf" target="_blank" className="btn btn-default">
+                      Download Resume
                     </a>
                   </div>
                   <div
