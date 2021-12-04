@@ -1,23 +1,14 @@
 import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
 
 function Portfolio({ portfolio }) {
-  const { title, shortDescription, bullet1, bullet2, bullet3, image, popupLink, link } = portfolio;
+  const { title, shortDescription, bullet1, bullet2, bullet3, image, popupLink, link, gitHubLink } = portfolio;
   const [toggler, setToggler] = useState(false);
-
-  const handleLightbox = (e) => {
-    if (!link) {
-      e.preventDefault();
-      setToggler(!toggler);
-    }
-  };
 
   return (
     <>
       <a
         href={link ? link : "!#"}
         className="work-image"
-        onClick={handleLightbox}
         target="_blank"
       >
         <div className="portfolio-item rounded shadow-dark">
@@ -39,7 +30,7 @@ function Portfolio({ portfolio }) {
             <a href={link} target="_blank">Live site</a>
             <div className="dotBetweenLinks">•</div>
             <li className="list-inline-item">
-              <a href="https://github.com/JackPercival" target="_blank">
+              <a href={gitHubLink} target="_blank">
                 <i className="fab fa-github"></i>
               </a>
             </li>
@@ -50,7 +41,6 @@ function Portfolio({ portfolio }) {
         <p>{bullet2}</p>
         <p>{bullet3}</p>
       </div>
-      {popupLink && <FsLightbox toggler={toggler} sources={popupLink} />}
     </>
   );
 }

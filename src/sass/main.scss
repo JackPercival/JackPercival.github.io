@@ -262,6 +262,10 @@ section.home {
   justify-content: space-between;
 }
 
+.singleProject:first-child {
+  margin-top: 0;
+}
+
 .projectNameAndLinks {
   display: flex;
   width: 100%;

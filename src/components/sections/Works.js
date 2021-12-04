@@ -37,7 +37,8 @@ const allData = [
     category: "art",
     image: "images/works/chihuaWalkCover.png",
     popupLink: ["images/works/chihuaWalkCover.png"],
-    link: "https://chihuawalk.herokuapp.com/"
+    link: "https://chihuawalk.herokuapp.com/",
+    gitHubLink: "https://github.com/JackPercival/chihuaWalk"
   },
   {
     id: 2,
@@ -49,7 +50,8 @@ const allData = [
     category: "art",
     image: "images/works/discussCover.png",
     popupLink: ["images/works/discussCover.png"],
-    link: "https://discuss-aa.herokuapp.com/"
+    link: "https://discuss-aa.herokuapp.com/",
+    gitHubLink: "https://github.com/benthere914/Discuss-Chat-Application"
   },
   {
     id: 3,
@@ -61,7 +63,8 @@ const allData = [
     category: "art",
     image: "images/works/soccrCover.png",
     popupLink: ["images/works/soccrCover.png"],
-    link: "https://soccr-aa.herokuapp.com/"
+    link: "https://soccr-aa.herokuapp.com/",
+    gitHubLink: "https://github.com/JackPercival/soccr"
   },
   {
     id: 3,
@@ -74,6 +77,7 @@ const allData = [
     image: "images/works/aceCover.png",
     popupLink: ["images/works/aceCover.png"],
     link: "https://aa-aceapi.herokuapp.com/",
+    gitHubLink: "https://github.com/mkoerner570/goodreads-express-project"
   },
 ];
 
