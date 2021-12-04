@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
 
 function Portfolio({ portfolio }) {
-  const { category, title, image, popupLink, link } = portfolio;
+  const { category, title, description, image, popupLink, link } = portfolio;
   const [toggler, setToggler] = useState(false);
 
   const handleLightbox = (e) => {
@@ -38,8 +38,9 @@ function Portfolio({ portfolio }) {
       >
         <div className="portfolio-item rounded shadow-dark">
           <div className="details">
-            <span className="term text-capitalize">{category}</span>
-            <h4 className="title">{title}</h4>
+            {/* <span className="term text-capitalize">{category}</span> */}
+            <h4 >{title}</h4>
+            <h4 id="projectDescription">{description}</h4>
             <span className="more-button">{handleIcon()}</span>
           </div>
           <div className="thumb">

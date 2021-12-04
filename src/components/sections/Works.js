@@ -29,101 +29,35 @@ const filters = [
 const allData = [
   {
     id: 1,
-    title: "Project Managment Illustration",
+    title: "ChihuaWalk",
+    description: "Dog-centric AirBnB clone built with React, Python, and Google APIs",
     category: "art",
     image: "images/works/1.svg",
     popupLink: ["images/works/1.svg"],
   },
   {
     id: 2,
-    title: "Guest App Walkthrough Screens",
-    category: "creative",
-    image: "images/works/2.svg",
-    popupLink: [
-      "images/works/2.svg",
-      "images/works/5.svg",
-      "images/works/6.svg",
-    ],
+    title: "Discuss",
+    description: "Chat application built with React, Python, and Socket.IO",
+    category: "art",
+    image: "images/works/1.svg",
+    popupLink: ["images/works/1.svg"],
   },
   {
     id: 3,
-    title: "Delivery App Wireframe",
-    category: "branding",
-    image: "images/works/3.svg",
-    popupLink: ["https://www.youtube.com/watch?v=qf9z4ulfmYw"],
-  },
-  {
-    id: 4,
-    title: "Onboarding Motivation",
-    category: "creative",
-    image: "images/works/4.svg",
-    popupLink: [
-      "https://www.youtube.com/watch?v=URVHRhBSjj8",
-      "https://www.youtube.com/watch?v=qf9z4ulfmYw",
-    ],
-  },
-  {
-    id: 5,
-    title: "iMac Mockup Design",
+    title: "Soccr",
+    description: "Photo sharing website built with React and JavaScript",
     category: "art",
-    image: "images/works/5.svg",
-    popupLink: ["images/works/5.svg"],
-  },
-  {
-    id: 6,
-    title: "Game Store App Concept",
-    category: "design",
-    image: "images/works/6.svg",
-    link: "https://dribbble.com",
-  },
-  {
-    id: 7,
-    title: "Project Managment Illustration",
-    category: "art",
-    image: "images/works/3.svg",
-    link: "https://pinterest.com",
-  },
-  {
-    id: 8,
-    title: "Guest App Walkthrough Screens",
-    category: "design",
     image: "images/works/1.svg",
     popupLink: ["images/works/1.svg"],
   },
   {
-    id: 9,
-    title: "Delivery App Wireframe",
-    category: "branding",
-    image: "images/works/4.svg",
-    popupLink: ["images/works/4.svg"],
-  },
-  {
-    id: 10,
-    title: "Game Store App Concept",
-    category: "design",
-    image: "images/works/6.svg",
-    link: "https://dribbble.com",
-  },
-  {
-    id: 11,
-    title: "Project Managment Illustration",
+    id: 3,
+    title: "Ace API",
+    description: "Website to view and organize APIs, built with JavaScript and Pug",
     category: "art",
-    image: "images/works/3.svg",
-    link: "https://pinterest.com",
-  },
-  {
-    id: 12,
-    title: "Guest App Walkthrough Screens",
-    category: "design",
     image: "images/works/1.svg",
     popupLink: ["images/works/1.svg"],
-  },
-  {
-    id: 13,
-    title: "Delivery App Wireframe",
-    category: "branding",
-    image: "images/works/4.svg",
-    popupLink: ["images/works/4.svg"],
   },
 ];
 
@@ -179,9 +113,9 @@ function Works() {
   return (
     <section id="works">
       <div className="container">
-        <Pagetitle title="Recent Works" />
+        <Pagetitle title="Projects" />
         {/* Start Portfolio Filters */}
-        <ScrollAnimation
+        {/* <ScrollAnimation
           animateIn="fadeInUp"
           animateOut="fadeInOut"
           animateOnce={true}
@@ -202,7 +136,7 @@ function Works() {
               </li>
             ))}
           </ul>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
         {/* End Portfolio Filters */}
 
         {/* Start Portfolio Items */}
