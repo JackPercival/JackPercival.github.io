@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Pagetitle from "../elements/Pagetitle";
+import { useForm, ValidationError } from '@formspree/react';
 
 function Contact() {
   const [formdata, setFormdata] = useState({
@@ -9,6 +10,8 @@ function Contact() {
     subject: "",
     message: "",
   });
+
+  const [state, handleSubmit] = useForm("xzboplyq");
 
   const [error, setError] = useState(false);
   const [message, setMessage] = useState("");
@@ -28,8 +31,9 @@ function Contact() {
       setError(true);
       setMessage("Message is required");
     } else {
+      handleSubmit(event);
       setError(false);
-      setMessage("You message has been sent!!!");
+      setMessage("Your message has been sent!");
     }
   };
 
@@ -53,7 +57,7 @@ function Contact() {
   return (
     <section id="contact">
       <div className="container">
-        <Pagetitle title="Get in Touch" />
+        <Pagetitle title="Contact Me" />
 
         <div className="row">
           <div className="col-md-4">
@@ -63,17 +67,25 @@ function Contact() {
                 animateOut="fadeInOut"
                 animateOnce={true}
               >
-                <h3>Let's talk about everything!</h3>
+                <h3>Let's talk about anything!</h3>
               </ScrollAnimation>
               <ScrollAnimation
                 animateIn="fadeInUp"
                 animateOut="fadeInOut"
                 animateOnce={true}
               >
-                <p>
-                  Don't like forms? Send me an{" "}
-                  <a href="mailto:jackpercival7@gmail.com">email</a>. 👋
-                </p>
+                <div className="contactInfoLine">
+                  <span className="icon icon-envelope-letter"></span>
+                  <p>jackpercival7@gmail.com</p>
+                </div>
+                <div className="contactInfoLine">
+                  <span className="icon icon-phone"></span>
+                  <p>(949) 244 - 7034</p>
+                </div>
+                <div className="contactInfoLine">
+                  <span className="icon icon-location-pin"></span>
+                  <p>Newport Beach, CA</p>
+                </div>
               </ScrollAnimation>
             </div>
           </div>
