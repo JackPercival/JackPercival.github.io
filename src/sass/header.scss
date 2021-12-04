@@ -1,5 +1,5 @@
 /*=================================================================*/
-/*                      HEADER                              
+/*                      HEADER
 /*=================================================================*/
 header.desktop-header-1 {
 	color: #FFF;
@@ -29,8 +29,6 @@ header.desktop-header-1 {
 		-o-transform: translateX(0);
 		transform: translateX(0);
 	}
-
-	.site-logo {}
 
 	/* === Vertical Menu === */
 	.vertical-menu {
@@ -206,7 +204,11 @@ header.desktop-header-2 {
 		transform: translateX(0);
 	}
 
-	.site-logo {}
+	.site-logo {
+		width: 600px;
+	}
+
+
 
 	/* === Vertical Menu === */
 	.vertical-menu {
@@ -478,6 +480,10 @@ header.mobile-header-2 {
 		padding-bottom: 0;
 	}
 
+	.navbar-nav {
+		align-items: flex-end;
+	}
+
 	.navbar-dark .navbar-nav .nav-link {
 		color: #FFF;
 	}
@@ -522,9 +528,9 @@ header.mobile-header-2 {
 		outline: 0;
 	}
 
-	.navbar-nav li:not(:last-child) {
-		padding-right: 3rem;
-	}
+	// .navbar-nav li:not(:last-child) {
+	// 	padding-right: 3rem;
+	// }
 
 	@media (min-width: 992px) {
 		.navbar-expand-lg .navbar-nav .nav-link {
@@ -548,5 +554,17 @@ header.mobile-header-2 {
 		.navbar-toggler {
 			border-color: rgba(#000000, 0.5)
 		}
+	}
+
+	#JPLogo {
+		text-decoration: none;
+		color: white;
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	.site-logo{
+		width: 107px;
+		height: 33px;
 	}
 }
