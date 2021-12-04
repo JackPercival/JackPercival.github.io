@@ -1,5 +1,5 @@
 /*=================================================================*/
-/*                      HEADER                              
+/*                      HEADER
 /*=================================================================*/
 header.desktop-header-1 {
 	color: #FFF;
@@ -29,8 +29,6 @@ header.desktop-header-1 {
 		-o-transform: translateX(0);
 		transform: translateX(0);
 	}
-
-	.site-logo {}
 
 	/* === Vertical Menu === */
 	.vertical-menu {
@@ -206,7 +204,11 @@ header.desktop-header-2 {
 		transform: translateX(0);
 	}
 
-	.site-logo {}
+	.site-logo {
+		width: 600px;
+	}
+
+
 
 	/* === Vertical Menu === */
 	.vertical-menu {
@@ -548,5 +550,11 @@ header.mobile-header-2 {
 		.navbar-toggler {
 			border-color: rgba(#000000, 0.5)
 		}
+	}
+
+
+	.site-logo{
+		width: 172px;
+		height: 33px;
 	}
 }

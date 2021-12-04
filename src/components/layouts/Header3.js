@@ -26,7 +26,7 @@ function Header3({ light, logoSource, bootstrapNav }) {
     >
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-dark">
-          <Logo logoSource={logoSource} bootstrapNav={bootstrapNav} />
+          {/* <Logo logoSource={logoSource} bootstrapNav={bootstrapNav} /> */}
           <button
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
@@ -81,7 +81,7 @@ function Header3({ light, logoSource, bootstrapNav }) {
                   smooth={true}
                   duration={500}
                 >
-                  Service
+                  Skills
                 </Link>
               </li>
               <li className="nav-item">
@@ -105,19 +105,7 @@ function Header3({ light, logoSource, bootstrapNav }) {
                   smooth={true}
                   duration={500}
                 >
-                  Works
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  activeClass="active"
-                  className="nav-link"
-                  to="section-blogs"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  Blog
+                  Projects
                 </Link>
               </li>
               <li className="nav-item">
