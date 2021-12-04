@@ -5,49 +5,29 @@ import Timeline from "../elements/Timeline";
 const educationData = [
   {
     id: 1,
-    title: "Acamedic Degree",
-    years: "2019 - Present",
+    title: "App Academy",
+    years: "2021",
     content:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
+      "Rigorous 1000-hour full stack software development course with <3% acceptance rate.",
   },
   {
     id: 2,
-    title: "Bachelor’s Degree",
-    years: "2017 - 2013",
+    title: "Carleton College",
+    years: "2012 - 2016",
     content:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
-  },
-  {
-    id: 3,
-    title: "Honours Degree",
-    years: "2013 - 2009",
-    content:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
+      "Attended Carleton College in Northfield, Minnesota. Earned a BA in Economics and competed in varsity Track & Field.",
   },
 ];
 
 const experienceData = [
   {
     id: 1,
-    title: "Web Designer",
-    years: "2019 - Present",
-    content:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
+    title: "Epic Systems",
+    years: "2016 - 2021",
+    content: "Worked on the Security R&D team as a Quality Manager. Tested new software features and fixes, managed development projects and teams of 6+ people, advised as a User Experience coordinator to improve our application's accessibility and usability, authored technical documentation, and trained new employees and customers.",
   },
-  {
-    id: 2,
-    title: "Front-End Developer",
-    years: "2017 - 2013",
-    content:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
-  },
-  {
-    id: 3,
-    title: "Back-End Developer",
-    years: "2013 - 2009",
-    content:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
-  },
+
+
 ];
 
 function Experiences() {
