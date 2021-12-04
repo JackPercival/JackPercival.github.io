@@ -86,6 +86,23 @@ function Contact() {
                   <span className="icon icon-location-pin"></span>
                   <p>Newport Beach, CA</p>
                 </div>
+                <ul id="contactInfoLinks" className="social-icons light list-inline mb-0 mt-4">
+                  <li className="list-inline-item">
+                    <a href="https://www.linkedin.com/in/jackpercival7/" target="_blank">
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a href="https://github.com/JackPercival" target="_blank">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a href="https://angel.co/u/jackpercival" target="_blank">
+                      <i className="fab fa-angellist"></i>
+                    </a>
+                  </li>
+                </ul>
               </ScrollAnimation>
             </div>
           </div>

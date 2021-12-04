@@ -513,6 +513,21 @@ select.portfolio-filter-mobile {
     margin: 0;
     margin-left: 10px;
   }
+
+  #contactInfoLinks {
+    margin-top: 10px!important;
+  }
+
+  ul .list-inline-item a i{
+    color: #5E5C7F;
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+  ul .list-inline-item a i:hover {
+    color: #9592cc;
+  }
 }
 
 /*=================================================================*/
