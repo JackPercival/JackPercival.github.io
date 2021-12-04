@@ -36,7 +36,6 @@ const allData = [
     bullet3: "• Implemented custom React components to create a single page website with fully dynamic data rendering",
     category: "art",
     image: "images/works/chihuaWalkCover.png",
-    popupLink: ["images/works/chihuaWalkCover.png"],
     link: "https://chihuawalk.herokuapp.com/",
     gitHubLink: "https://github.com/JackPercival/chihuaWalk"
   },
@@ -49,7 +48,6 @@ const allData = [
     bullet3: "• Created an instant chat feature with the Socket.IO library to let users send and receive messages in live time",
     category: "art",
     image: "images/works/discussCover.png",
-    popupLink: ["images/works/discussCover.png"],
     link: "https://discuss-aa.herokuapp.com/",
     gitHubLink: "https://github.com/benthere914/Discuss-Chat-Application"
   },
@@ -62,20 +60,18 @@ const allData = [
     bullet3: "• Styled the website with user-centered design techniques to enhance usability and user experience",
     category: "art",
     image: "images/works/soccrCover.png",
-    popupLink: ["images/works/soccrCover.png"],
     link: "https://soccr-aa.herokuapp.com/",
     gitHubLink: "https://github.com/JackPercival/soccr"
   },
   {
     id: 3,
     title: "Ace API",
-    shortDescription: "Website designed for developers to view and organize APIs, built with Javascript, HTML, Pug, and CSS",
+    shortDescription: "Website designed for developers to view and organize APIs, built with Javascript, Pug, and CSS",
     bullet1: "• Constructed the front-end JavaScript used throughout the application, to create an interactive user interface with minimal page refreshes",
     bullet2: "• Instituted custom SQL queries to efficiently show and update data to decrease server latency and increase loading speeds",
     bullet3: "• Built pages with Pug templates to create dynamic and reusable code throughout the application",
     category: "art",
     image: "images/works/aceCover.png",
-    popupLink: ["images/works/aceCover.png"],
     link: "https://aa-aceapi.herokuapp.com/",
     gitHubLink: "https://github.com/mkoerner570/goodreads-express-project"
   },

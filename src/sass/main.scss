@@ -455,6 +455,40 @@ select.portfolio-filter-mobile {
   }
 }
 
+@media (max-width: 767px) {
+  .singleProject {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .projectInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    width: 300px;
+
+    h5 {
+      font-size: 16px;
+      font-weight: normal;
+      color: #5E5C7F;
+      line-height: 28px;
+    }
+
+  }
+
+  .projectInfo p {
+    display: none;
+  }
+
+  .projectImage {
+    width: 300px;
+    max-width: 300px;
+  }
+
+}
+
 /*=================================================================*/
 /*                      FACTS
 /*=================================================================*/

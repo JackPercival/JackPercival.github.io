@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 
 function Portfolio({ portfolio }) {
-  const { title, shortDescription, bullet1, bullet2, bullet3, image, popupLink, link, gitHubLink } = portfolio;
-  const [toggler, setToggler] = useState(false);
+  const { title, shortDescription, bullet1, bullet2, bullet3, image, link, gitHubLink } = portfolio;
 
   return (
     <>
       <a
-        href={link ? link : "!#"}
+        href={link}
         className="work-image"
         target="_blank"
       >
