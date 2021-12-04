@@ -256,6 +256,52 @@ section.home {
   display: none;
 }
 
+.singleProject {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectNameAndLinks {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.projectLinks {
+  display: flex;
+}
+
+.dotBetweenLinks {
+  margin: 0 10px;
+  color: #FF4D60;
+}
+
+.projectInfo {
+  width: 70%;
+  margin-left: 25px;
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+
+  h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+}
+
+.projectImage {
+  width: 436px;
+  max-width: 436px;
+}
+
 .portfolio-item {
   position: relative;
   overflow: hidden;
@@ -268,7 +314,7 @@ section.home {
     color: #fff;
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 436px;
     z-index: 1;
 
     h4 {
@@ -330,7 +376,7 @@ section.home {
     top: 0;
     opacity: 0;
     height: 100%;
-    width: 100%;
+    width: 436px;
     @include transition(0.3s);
   }
 
