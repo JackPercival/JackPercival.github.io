@@ -29,206 +29,73 @@ const filters = [
 const allData = [
   {
     id: 1,
-    title: "Project Managment Illustration",
+    title: "ChihuaWalk",
+    shortDescription: "AirBnb clone focused on dogs, built with React, Redux, Python, HTML, CSS, and Google APIs",
+    bullet1: "• Incorporated the Google Geocoder API to validate addresses and convert them into geo-coordinates to automatically render dog locations on a Google Map",
+    bullet2: "• Engineered a customizable search feature with Redux to allow users to search on a variety of optional characteristics and find results that fit their criteria",
+    bullet3: "• Implemented custom React components to create a single page website with fully dynamic data rendering",
     category: "art",
-    image: "images/works/1.svg",
-    popupLink: ["images/works/1.svg"],
+    image: "images/works/chihuaWalkCover.png",
+    link: "https://chihuawalk.herokuapp.com/",
+    gitHubLink: "https://github.com/JackPercival/chihuaWalk"
   },
   {
     id: 2,
-    title: "Guest App Walkthrough Screens",
-    category: "creative",
-    image: "images/works/2.svg",
-    popupLink: [
-      "images/works/2.svg",
-      "images/works/5.svg",
-      "images/works/6.svg",
-    ],
+    title: "Discuss",
+    shortDescription: "Chat-based web application inspired by Discord, built with React, Redux, Python, HTML, CSS, and Socket.IO",
+    bullet1: "• Designed the majority of the application with custom CSS, including the splash screen, authentication pages, navigation bars, and search page, to create a seamless user experience between every page",
+    bullet2: "• Organized the entire application’s architecture and structure via React Router to reduce loading times, page refreshes, and React component re-renders",
+    bullet3: "• Created an instant chat feature with the Socket.IO library to let users send and receive messages in live time",
+    category: "art",
+    image: "images/works/discussCover.png",
+    link: "https://discuss-aa.herokuapp.com/",
+    gitHubLink: "https://github.com/benthere914/Discuss-Chat-Application"
   },
   {
     id: 3,
-    title: "Delivery App Wireframe",
-    category: "branding",
-    image: "images/works/3.svg",
-    popupLink: ["https://www.youtube.com/watch?v=qf9z4ulfmYw"],
-  },
-  {
-    id: 4,
-    title: "Onboarding Motivation",
-    category: "creative",
-    image: "images/works/4.svg",
-    popupLink: [
-      "https://www.youtube.com/watch?v=URVHRhBSjj8",
-      "https://www.youtube.com/watch?v=qf9z4ulfmYw",
-    ],
-  },
-  {
-    id: 5,
-    title: "iMac Mockup Design",
+    title: "Soccr",
+    shortDescription: "Flickr clone for viewing and uploading soccer related images, built with React, Redux, Javascript, HTML, and CSS",
+    bullet1: "• Developed user privacy and autonomy via authentication, React Router, and BCrypt password hashings",
+    bullet2: "• Connected the Express backend to a PostgreSQL database, utilizing the Sequelize ORM for validations and database queries",
+    bullet3: "• Styled the website with user-centered design techniques to enhance usability and user experience",
     category: "art",
-    image: "images/works/5.svg",
-    popupLink: ["images/works/5.svg"],
+    image: "images/works/soccrCover.png",
+    link: "https://soccr-aa.herokuapp.com/",
+    gitHubLink: "https://github.com/JackPercival/soccr"
   },
   {
-    id: 6,
-    title: "Game Store App Concept",
-    category: "design",
-    image: "images/works/6.svg",
-    link: "https://dribbble.com",
-  },
-  {
-    id: 7,
-    title: "Project Managment Illustration",
+    id: 3,
+    title: "Ace API",
+    shortDescription: "Website designed for developers to view and organize APIs, built with Javascript, Pug, and CSS",
+    bullet1: "• Constructed the front-end JavaScript used throughout the application, to create an interactive user interface with minimal page refreshes",
+    bullet2: "• Instituted custom SQL queries to efficiently show and update data to decrease server latency and increase loading speeds",
+    bullet3: "• Built pages with Pug templates to create dynamic and reusable code throughout the application",
     category: "art",
-    image: "images/works/3.svg",
-    link: "https://pinterest.com",
-  },
-  {
-    id: 8,
-    title: "Guest App Walkthrough Screens",
-    category: "design",
-    image: "images/works/1.svg",
-    popupLink: ["images/works/1.svg"],
-  },
-  {
-    id: 9,
-    title: "Delivery App Wireframe",
-    category: "branding",
-    image: "images/works/4.svg",
-    popupLink: ["images/works/4.svg"],
-  },
-  {
-    id: 10,
-    title: "Game Store App Concept",
-    category: "design",
-    image: "images/works/6.svg",
-    link: "https://dribbble.com",
-  },
-  {
-    id: 11,
-    title: "Project Managment Illustration",
-    category: "art",
-    image: "images/works/3.svg",
-    link: "https://pinterest.com",
-  },
-  {
-    id: 12,
-    title: "Guest App Walkthrough Screens",
-    category: "design",
-    image: "images/works/1.svg",
-    popupLink: ["images/works/1.svg"],
-  },
-  {
-    id: 13,
-    title: "Delivery App Wireframe",
-    category: "branding",
-    image: "images/works/4.svg",
-    popupLink: ["images/works/4.svg"],
+    image: "images/works/aceCover.png",
+    link: "https://aa-aceapi.herokuapp.com/",
+    gitHubLink: "https://github.com/mkoerner570/goodreads-express-project"
   },
 ];
 
 function Works() {
   const [getAllItems] = useState(allData);
-  const [dataVisibleCount, setDataVisibleCount] = useState(6);
-  const [dataIncrement] = useState(3);
-  const [activeFilter, setActiveFilter] = useState("");
   const [visibleItems, setVisibleItems] = useState([]);
-  const [noMorePost, setNoMorePost] = useState(false);
 
   useEffect(() => {
-    setActiveFilter(filters[0].text.toLowerCase());
     setVisibleItems(getAllItems.filter((item) => item.id <= 6));
   }, [getAllItems]);
 
-  const handleChange = (e) => {
-    e.preventDefault();
-    setActiveFilter(e.target.textContent.toLowerCase());
-    let tempData;
-    if (e.target.textContent.toLowerCase() === filters[0].text.toLowerCase()) {
-      tempData = getAllItems.filter((data) => data.id <= dataVisibleCount);
-    } else {
-      tempData = getAllItems.filter(
-        (data) =>
-          data.category === e.target.textContent.toLowerCase() &&
-          data.id <= dataVisibleCount
-      );
-    }
-    setVisibleItems(tempData);
-  };
-
-  const handleLoadmore = (e) => {
-    e.preventDefault();
-    let tempCount = dataVisibleCount + dataIncrement;
-    if (dataVisibleCount > getAllItems.length) {
-      setNoMorePost(true);
-    } else {
-      setDataVisibleCount(tempCount);
-      if (activeFilter === filters[0].text.toLowerCase()) {
-        console.log("they are same");
-        setVisibleItems(getAllItems.filter((data) => data.id <= tempCount));
-      } else {
-        setVisibleItems(
-          getAllItems.filter(
-            (data) => data.category === activeFilter && data.id <= tempCount
-          )
-        );
-      }
-    }
-  };
 
   return (
     <section id="works">
       <div className="container">
-        <Pagetitle title="Recent Works" />
-        {/* Start Portfolio Filters */}
-        <ScrollAnimation
-          animateIn="fadeInUp"
-          animateOut="fadeInOut"
-          animateOnce={true}
-        >
-          <ul className="portfolio-filter list-inline">
-            {filters.map((filter) => (
-              <li className="list-inline-item" key={filter.id}>
-                <button
-                  onClick={handleChange}
-                  className={
-                    filter.text.toLowerCase() === activeFilter
-                      ? "text-capitalize current"
-                      : "text-capitalize"
-                  }
-                >
-                  {filter.text}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </ScrollAnimation>
-        {/* End Portfolio Filters */}
-
-        {/* Start Portfolio Items */}
+        <Pagetitle title="Projects" />
         <div className="row portfolio-wrapper">
           {visibleItems.map((item) => (
-            <div className="col-md-4 col-sm-6 grid-item" key={item.id}>
+            <div className="col-md-4 col-sm-6 grid-item singleProject" key={item.id}>
               <Portfolio portfolio={item} />
             </div>
           ))}
-        </div>
-        {/* End Portfolio Items */}
-
-        <div className="load-more text-center mt-4">
-          <button
-            className="btn btn-default"
-            onClick={handleLoadmore}
-            disabled={noMorePost ? "disabled" : null}
-          >
-            {noMorePost ? (
-              "No more items"
-            ) : (
-              <span>
-                <i className="fas fa-spinner"></i> Load more
-              </span>
-            )}
-          </button>
         </div>
       </div>
     </section>
