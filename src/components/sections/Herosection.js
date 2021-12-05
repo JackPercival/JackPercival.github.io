@@ -33,14 +33,15 @@ function Herosection(props) {
               strings={[
                 "Software Engineer",
                 "UI/UX enthusiast",
-                "Dog lover",
+                "Full stack developer",
+                "Dog lover"
               ]}
               typeSpeed={80}
               backSpeed={40}
               attr="value"
               loop
             >
-              <label value></label>
+              <label></label>
             </Typed>
           </p>
 
