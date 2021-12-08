@@ -66,3 +66,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Deploying to Github Pages
+Run `npm run deploy`, then change the custom URL in the settings page
+
+View this [article](https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/) for more info about deploying to Github pages
