@@ -5,11 +5,11 @@ function Footer({ light }) {
     <footer className={light ? "footer light" : "footer"}>
       <div className="container footerContainer">
         <span className="copyright">
-          &copy; Jack Percival All Rights Reserved
+          &copy; {new Date().getFullYear()} Jack Percival All Rights Reserved
         </span>
-        <span className="copyright">
+        {/* <span className="copyright">
           &copy; {new Date().getFullYear()} Bolby Template.
-        </span>
+        </span> */}
       </div>
     </footer>
   );
