@@ -97,7 +97,7 @@ function Services() {
             >
               Click here
             </Link>{" "}
-            to contact me! 👋
+            to contact me!
           </p>
         </div>
       </div>
