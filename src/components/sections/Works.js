@@ -33,7 +33,7 @@ const allData = [
     shortDescription: "AirBnb clone focused on dogs, built with React, Redux, Python, HTML, CSS, and Google APIs",
     bullet1: "• Incorporated the Google Geocoder API to validate addresses and convert them into geo-coordinates to automatically render dog locations on a Google Map",
     bullet2: "• Engineered a customizable search feature with Redux to allow users to search on a variety of optional characteristics and find results that fit their criteria",
-    bullet3: "• Implemented custom React components to create a single page website with fully dynamic data rendering",
+    bullet3: "• Utilized AWS S3 to implement image uploads to reduce server load and allow for scalability of image services",
     category: "art",
     image: "images/works/chihuaWalkCover.png",
     link: "https://chihuawalk.herokuapp.com/",
@@ -55,9 +55,9 @@ const allData = [
     id: 3,
     title: "Soccr",
     shortDescription: "Flickr clone for viewing and uploading soccer related images, built with React, Redux, Javascript, HTML, and CSS",
-    bullet1: "• Developed user privacy and autonomy via authentication, React Router, and BCrypt password hashings",
-    bullet2: "• Connected the Express backend to a PostgreSQL database, utilizing the Sequelize ORM for validations and database queries",
-    bullet3: "• Styled the website with user-centered design techniques to enhance usability and user experience",
+    bullet1: "• Connected the Express backend to a PostgreSQL database, utilizing the Sequelize ORM for validations and database queries",
+    bullet2: "• Implemented custom React components to create a single page website with fully dynamic data rendering",
+    bullet3: "• Developed user privacy and autonomy via authentication, React Router, and BCrypt password hashing, to ensure only authenticated users can modify their photos and comments based on defined user requirements and permissions",
     category: "art",
     image: "images/works/soccrCover.png",
     link: "https://soccr-aa.herokuapp.com/",
@@ -72,8 +72,8 @@ const allData = [
     bullet3: "• Built pages with Pug templates to create dynamic and reusable code throughout the application",
     category: "art",
     image: "images/works/aceCover.png",
-    link: "https://aa-aceapi.herokuapp.com/",
-    gitHubLink: "https://github.com/mkoerner570/goodreads-express-project"
+    link: "https://ace--api.herokuapp.com/",
+    gitHubLink: "https://github.com/Robert-Kauth/Ace-Api"
   },
 ];
 
