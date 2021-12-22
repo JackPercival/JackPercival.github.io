@@ -15,7 +15,7 @@ const educationData = [
     title: "Carleton College",
     years: "2012 - 2016",
     content:
-      "Attended Carleton College in Northfield, Minnesota. Earned a BA in Economics and competed in varsity Track & Field.",
+      "Attended Carleton College in Northfield, Minnesota. Earned my BA in Economics and competed in varsity Track & Field.",
   },
 ];
 
