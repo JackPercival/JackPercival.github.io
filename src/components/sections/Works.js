@@ -48,7 +48,7 @@ const allData = [
     bullet3: "• Created an instant chat feature with the Socket.IO library",
     category: "art",
     image: "images/works/discussCover.png",
-    link: "https://discuss-aa.herokuapp.com/",
+    link: "https://discuss-chat.onrender.com/",
     gitHubLink: "https://github.com/benthere914/Discuss-Chat-Application"
   },
   {
@@ -62,19 +62,7 @@ const allData = [
     image: "images/works/soccrCover.png",
     link: "https://soccr-aa.herokuapp.com/",
     gitHubLink: "https://github.com/JackPercival/soccr"
-  },
-  {
-    id: 3,
-    title: "Ace API",
-    shortDescription: "Website designed for developers to view and organize APIs, built with Javascript, Pug, and CSS",
-    bullet1: "• Constructed the front-end JavaScript used in the application to create an interactive user interface with minimal page refreshes",
-    bullet2: "• Decreased server latency and increased loading speeds by instituting custom SQL queries to efficiently display and update data",
-    bullet3: "• Leveraged coding best practices to build pages with Pug templates, creating dynamic and reusable code throughout the website",
-    category: "art",
-    image: "images/works/aceCover.png",
-    link: "https://ace--api.herokuapp.com/",
-    gitHubLink: "https://github.com/Robert-Kauth/Ace-Api"
-  },
+  }
 ];
 
 function Works() {

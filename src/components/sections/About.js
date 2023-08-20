@@ -8,7 +8,7 @@ const aboutContent = {
   name: "Bolby",
   avatarImage: "/images/me2.png",
   content:
-    "I'm Jack Percival, a software engineer from Newport Beach, California. I have experience building full stack applications, advising on UI/UX decisions, managing large scale software development projects, and testing countless features. I love to code with React, Redux, JavaScript, and Python, and am always eager to learn new technologies.",
+    "I'm Jack Percival, a Software Development Engineer at Amazon. I have over seven years of experience building full stack applications, advising on UI/UX decisions, managing large scale software development projects, and testing countless features. I love to code with React, Redux, JavaScript, and Python, and am always eager to learn new technologies.",
 };
 
 const progressData = [
@@ -42,7 +42,7 @@ const counterData = [
   {
     id: 1,
     title: "Projects",
-    count: 30,
+    count: 40,
     icon: "icon-fire",
   },
   {

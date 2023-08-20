@@ -4,71 +4,86 @@ import Pagetitle from "../elements/Pagetitle";
 import Service from "../elements/Service";
 
 const servicesData = [
-  {
-    id: 1,
-    icon: "images/react_icon.png",
-    title: "React",
-    padding: true
+  {id: 1,
+    icon: "images/java.svg",
+    title: "Java"
   },
-  {
-    id: 2,
-    icon: "images/redux_icon.png",
-    title: "Redux",
-    padding: true
-  },
-  {id: 3,
+  {id: 2,
     icon: "images/js_icon.png",
     title: "JavaScript"
   },
   {
-    id: 4,
+    id: 3,
     icon: "images/python_icon.png",
     title: "Python",
     padding: true
   },
   {
+    id: 4,
+    icon: "images/react_icon.png",
+    title: "React",
+    padding: true
+  },
+  {
     id: 5,
+    icon: "images/redux_icon.png",
+    title: "Redux",
+    padding: true
+  },
+  {
+    id: 6,
     icon: "images/flask_icon.png",
     title: "Flask",
     padding: true
   },
   {
-    id: 6,
+    id: 7,
     icon: "images/express_icon.png",
     title: "Express",
   },
   {
-    id: 6,
+    id: 8,
     icon: "images/html2_icon.png",
     title: "HTML"
   },
   {
-    id: 7,
+    id: 9,
     icon: "images/css_icon.jpeg",
     title: "CSS"
   },
   {
-    id: 8,
+    id: 10,
     icon: "images/sql_icon.png",
     title: "SQL",
     padding: true
   },
   {
-    id: 8,
+    id: 11,
     icon: "images/sequelize_icon.png",
     title: "Sequelize",
     padding: true
   },
   {
-    id: 8,
+    id: 12,
     icon: "images/sqlalchemy_icon.png",
     title: "SQLAlchemy",
     padding: true
   },
   {
-    id: 9,
+    id: 13,
     icon: "images/postgresql_icon.png",
     title: "PostgreSQL",
+    padding: true
+  },
+  {
+    id: 14,
+    icon: "images/aws.jpeg",
+    title: "AWS"
+  },
+  {
+    id: 16,
+    icon: "images/git.png",
+    title: "Git",
     padding: true
   },
 ];

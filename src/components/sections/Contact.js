@@ -56,11 +56,11 @@ function Contact() {
 
   return (
     <section id="contact">
-      <div className="container">
+      <div className="container" id="contactContainer">
         <Pagetitle title="Contact Me" />
 
         <div className="row">
-          <div className="col-md-4">
+          <div className="contactContainer">
             <div className="contact-info">
               <ScrollAnimation
                 animateIn="fadeInUp"
@@ -76,15 +76,15 @@ function Contact() {
               >
                 <div className="contactInfoLine">
                   <span className="icon icon-envelope-letter"></span>
-                  <p>jackpercival7@gmail.com</p>
+                  <p className="contactInfoData">jackpercival7@gmail.com</p>
                 </div>
                 <div className="contactInfoLine">
                   <span className="icon icon-phone"></span>
-                  <p>(949) 244 - 7034</p>
+                  <p className="contactInfoData">(949) 244 - 7034</p>
                 </div>
                 <div className="contactInfoLine">
                   <span className="icon icon-location-pin"></span>
-                  <p>Newport Beach, CA</p>
+                  <p className="contactInfoData">Davis, CA</p>
                 </div>
                 <ul id="contactInfoLinks" className="social-icons light list-inline mb-0 mt-4">
                   <li className="list-inline-item">
@@ -105,82 +105,6 @@ function Contact() {
                 </ul>
               </ScrollAnimation>
             </div>
-          </div>
-
-          <div className="col-md-8">
-            <form
-              id="contact-form"
-              className="contact-form mt-6"
-              onSubmit={submitHandler}
-            >
-              <div className="row">
-                <div className="column col-md-6">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      name="name"
-                      id="InputName"
-                      placeholder="Your name"
-                      onChange={handleChange}
-                      value={formdata.name}
-                    />
-                  </div>
-                </div>
-
-                <div className="column col-md-6">
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="InputEmail"
-                      name="email"
-                      placeholder="Email address"
-                      onChange={handleChange}
-                      value={formdata.email}
-                    />
-                  </div>
-                </div>
-
-                <div className="column col-md-12">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="InputSubject"
-                      name="subject"
-                      placeholder="Subject"
-                      onChange={handleChange}
-                      value={formdata.subject}
-                    />
-                  </div>
-                </div>
-
-                <div className="column col-md-12">
-                  <div className="form-group">
-                    <textarea
-                      name="message"
-                      id="InputMessage"
-                      className="form-control"
-                      rows="5"
-                      placeholder="Message"
-                      onChange={handleChange}
-                      value={formdata.message}
-                    ></textarea>
-                  </div>
-                </div>
-              </div>
-              <button
-                type="submit"
-                name="submit"
-                id="submit"
-                value="Submit"
-                className="btn btn-default"
-              >
-                Send Message
-              </button>
-            </form>
-            {handleAlerts()}
           </div>
         </div>
       </div>

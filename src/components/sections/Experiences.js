@@ -22,10 +22,16 @@ const educationData = [
 const experienceData = [
   {
     id: 1,
+    title: "Amazon",
+    years: "2022 - Today",
+    content: "Currently work as a Software Development Engineer at Amazon, on the Subscribe and Discover team. I develop full-stack features used by millions of Amazon customers, write comprehensive unit and integration tests, handle on-call operations to solve high priority issues, and integrate projects with AWS technologies.",
+  },
+  {
+    id: 2,
     title: "Epic Systems",
     years: "2016 - 2021",
     content: "Worked on the Security R&D team as a Quality Manager. Tested new software features and fixes, managed development projects and teams of 6+ people, advised as a User Experience coordinator to improve our application's accessibility and usability, authored technical documentation, and trained new employees and customers.",
-  },
+  }
 
 
 ];
