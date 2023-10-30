@@ -48,8 +48,8 @@ const allData = [
     bullet3: "• Created an instant chat feature with the Socket.IO library",
     category: "art",
     image: "images/works/discussCover.png",
-    link: "https://discuss-chat.onrender.com/",
-    gitHubLink: "https://github.com/benthere914/Discuss-Chat-Application"
+    link: "https://discuss-vuk7.onrender.com/",
+    gitHubLink: "https://github.com/JackPercival/Discuss-Chat-Application"
   },
   {
     id: 3,
